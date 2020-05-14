@@ -24,7 +24,7 @@ function App() {
 
         const imagenesPorPagina = 30;
         const key = '16518044-dfd6fa991268838b78ea7db85';
-        const url = `http://pixabay.com/api/?key=${key}&q=${busqueda}&per_page=${imagenesPorPagina}&page=${pagina}`;
+        const url = `https://pixabay.com/api/?key=${key}&q=${busqueda}&per_page=${imagenesPorPagina}&page=${pagina}`;
 
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
